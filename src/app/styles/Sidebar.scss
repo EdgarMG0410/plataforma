@@ -1,0 +1,125 @@
+@import '../../index.scss';
+.SidebarClose{
+    background-color: $azul;
+    border-right: 2px solid white;
+    box-shadow:  0 17px 8px #1a161654;
+    display: grid;
+    grid-auto-flow: row;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 5vw;
+    z-index: 99;
+    transition-duration: 0.2s;
+    @include for-phone-only {
+        position: fixed;
+        margin-bottom: 0 !important;
+        margin: auto;
+        width: 100vw;
+        bottom: 0;
+        height: 8vh;
+     }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        height: 40vh;
+        @include for-phone-only{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            height: 8vh;
+            width: 100vw;
+        }
+        .item{
+            display: grid;
+            place-items: center;
+            margin: 1rem auto;
+            color: white;
+            h2{
+                display: none;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                @include for-phone-only{
+                    display: none;
+                }
+            }
+            img{
+                width: 4rem;
+                margin: auto;
+                @include for-phone-only{
+                    width: 3rem;
+                }
+                @include for-tablet {
+                    width: 2.5rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    
+}
+.SidebarOpen{
+    background-color: $azul;
+    border-right: 2px solid white;
+    box-shadow:  0 17px 8px #1a161654;
+    display: grid;
+    grid-auto-flow: row;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 12vw;
+    z-index: 99;
+    transition-duration: 0.2s;
+    @include for-phone-only{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        height: 40vh;
+        .item{
+            display: grid;
+            grid-auto-flow: column;
+            margin: 1rem;
+            color: white;
+            align-items: center;
+            @include for-tablet {
+                margin: 0.5rem;
+                h2{
+                    font-size: 1rem;
+                }   
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                @include for-phone-only{
+                    display: none;
+                }
+            }
+            img{
+                width: 4rem;
+                margin: auto;
+                @include for-tablet {
+                    width: 2.5rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+.logout{
+    
+    margin: auto;
+    margin-bottom: 0;
+    height: fit-content;
+    button{
+        background-color: transparent;
+        border: none;
+    }
+    img{
+        width: 4rem;
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../index.scss";
+.Header{
+    display: flex;
+    position: fixed;
+    height: 7vh;
+    background-color: white;
+    z-index: 98;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    top: 0;
+    .logo{
+        display: flex;
+        margin-right: 30vw;
+        margin-top: 1rem;
+        width: 10rem;
+        @include for-phone-only{
+            margin-left: 0 !important;
+            margin-top: 1rem;
+            width: 9rem;
+        }
+    }
+    .name{
+        margin-right: 2rem;
+        font-size: 2rem;
+        @include for-phone-only{
+            display: none;
+        }
+    }
+}
