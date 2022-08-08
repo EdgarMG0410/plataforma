@@ -1,5 +1,8 @@
 import "../../index.scss"
+import { Calendario } from "../components/Calendario"
+import { Certification } from "../components/Certification"
 import { Chart } from "../components/Chart"
+import { Nomina } from "../components/Nomina"
 import { Rendimiento } from "../components/Rendimiento"
 import { UserProfile } from "../components/UserProfile"
 import { Vacation } from "../components/Vacation"
@@ -13,6 +16,9 @@ export const Home = () => {
         <Vacation/>
         <Rendimiento/>
         <Chart/>
+        <Calendario/>
+        <Nomina/>
+        <Certification/>
     </div>
     </>
   )

@@ -1,0 +1,35 @@
+@import './App.scss';
+
+.Nomina{
+    display: flex;
+    flex-direction: column;
+    box-shadow: $sombra1;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgba(132, 172, 132, 0.267);
+    .pagos{
+        margin-top: 1rem;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 1px $azul;
+        .item{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            color: $azul;
+            text-shadow: none;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            margin: 1rem auto;
+            background-color: rgba(255, 255, 255, 0.315);
+            button{
+                background-color: $azul;
+                padding: 0.5rem 1rem;
+                color: white;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}

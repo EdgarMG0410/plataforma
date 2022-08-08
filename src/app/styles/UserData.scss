@@ -1,0 +1,15 @@
+@import './App.scss';
+
+.UserData{
+    display: flex;
+    flex-direction: column;
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .table{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+}

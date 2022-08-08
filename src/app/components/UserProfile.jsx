@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { Button } from '../../auth/components/Button'
 import '../styles/UserProfile.scss'
 
@@ -11,9 +12,11 @@ export const UserProfile = () => {
             <h2>Edgar Mancillas</h2>
             <p>Desarrollador Frontend</p>
             <h3>Activo</h3>
+            <NavLink to='user'>
             <Button 
             style='primary'
             name='Ver mis datos'/>
+            </NavLink>
         </div>
     </div>
   )

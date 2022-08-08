@@ -27,25 +27,33 @@
         h2{
             font-size: 2rem;
         }
+        .Full{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-area: 1/1/17/25;
+            padding: 2rem;
+        }
         .UserProfile{
             grid-area: 2/1/7/8;
-            width: 100%;
-            height: 100%;
         }
         .Vacation{
             grid-area: 2/8/7/11;
-            width: 100%;
-            height: 100%;
+
         }
         .Rendimiento{
             grid-area: 2/11/7/14;
-            width: 100%;
-            height: 100%;
         }
         .Chart{
             grid-area: 7/1/18/14;
-            width: 100%;
-            height: 100%;
+        }
+        .Calendar{
+            grid-area: 2/14/10/25;
+        }
+        .Nomina{
+            grid-area: 10/14/18/19;
+        }
+        .Cert{
+            grid-area: 10/19/18/25;
         }
     }
     

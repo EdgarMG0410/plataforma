@@ -19,3 +19,41 @@
         cursor: pointer;
     }
 }
+.secondary{
+    background-color: white;
+    border: 2px solid $azul;
+    border-radius: 1rem;
+    box-shadow: $sombra1;
+    color: $azul;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 3rem;
+    margin: auto;
+    padding: 1rem 3rem;
+    width: 100%;
+    &:hover{
+        background-color: rgba(0, 17, 37, 0.384);
+        cursor: pointer;
+    }
+}
+.red{
+    background-color: rgba(117, 14, 14, 0.76);
+    border: 2px solid white;
+    border-radius: 1rem;
+    box-shadow: $sombra1;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 3rem;
+    margin: auto;
+    padding: 1rem 3rem;
+    width: 100%;
+    &:hover{
+        background-color: rgba(143, 6, 6, 0.384);
+        cursor: pointer;
+    }
+}

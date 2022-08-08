@@ -1,0 +1,36 @@
+@import "./App.scss";
+
+
+.data{
+    display: flex;
+    margin: 5rem auto 0;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    .photo{
+        background: url('../../assets/userphoto.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 20rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+    .my-info{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 2rem;
+        box-shadow: $sombra1;
+        border-radius: 1rem;
+        h1{
+            margin: 1rem 0;
+            text-align: left;
+            span{
+                font-weight: lighter;
+            }
+        }
+    }
+}

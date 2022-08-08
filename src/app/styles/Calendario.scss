@@ -1,0 +1,14 @@
+
+@import './App.scss';
+
+.Calendar{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: $sombra1;
+    padding: 2rem 4rem;
+}
+.react-calendar{
+    border: none !important;
+    width: auto !important;
+}
