@@ -1,0 +1,16 @@
+@import '../styles/App.scss';
+
+.Chart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: $sombra1;
+    padding: 3rem 2rem;
+    .grafica{
+        display: flex;
+        justify-content: flex-start;
+        margin: auto;
+    }
+}

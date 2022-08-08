@@ -1,0 +1,22 @@
+.Info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40%;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    .text{
+        display: grid;
+        margin: 0 auto;
+        align-items: flex-end;
+        font-size: 2rem;
+        h1{
+            text-align: left;
+            text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+        }
+        span{
+            font-size: 1.5rem;
+            color: rgba(175, 175, 175, 0.637);
+            text-shadow: none;
+        }
+    }
+}

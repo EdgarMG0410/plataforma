@@ -8,7 +8,7 @@ import exam from '../../assets/exam.png';
 import menu from '../../assets/menu.png';
 import cancel from '../../assets/cancel.png';
 import logout from '../../assets/sesion.png';
-
+import logo from '../../assets/logo-bco.png';
 
 
 export const Sidebar = () => {
@@ -36,6 +36,7 @@ export const Sidebar = () => {
           </button>
         )
         }
+        <img className='logo' src={logo} alt='logo'/>
       </div>
 
       <NavLink to="/">

@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.primary{
+    background-color: $azul;
+    border: 2px solid white;
+    border-radius: 1rem;
+    box-shadow: $sombra1;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 3rem;
+    margin: auto;
+    padding: 1rem 3rem;
+    width: 100%;
+    &:hover{
+        background-color: rgba(0, 17, 37, 0.685);
+        cursor: pointer;
+    }
+}

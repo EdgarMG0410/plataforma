@@ -1,0 +1,17 @@
+@import '../styles/App.scss';
+
+.Vacation{
+    display: flex;
+    place-items: center;
+    margin: 0.5rem auto;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: $sombra1;
+    background-color: rgba(0, 140, 255, 0.171);
+    backdrop-filter: (1rem);
+    padding: 4rem 1rem;
+    .btn{
+        margin-top: 4rem;
+    }
+
+}

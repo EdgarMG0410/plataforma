@@ -1,10 +1,19 @@
 import { useState } from "react";
-import "../styles/Login.scss";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import { Input, Info, Button } from "../components";
+import logo from "../../assets/logo.png";
+import "../styles/Login.scss"
 
 export const Login = () => {
   const [isLogged, setIsLogged] = useState(false);
   const [data, setData] = useState({ usuario: '', contrasena: '' })
+  const navigate = useNavigate();
+
+  const onSubmit = () => {
+    navigate('/', {
+      replace: true
+    });
+  }
   const handleChange = (e) => {
     setData({
       ...data,
@@ -12,35 +21,26 @@ export const Login = () => {
     })
   }
 
-  const onSubmit = () => {
-    console.log(data)
-  }
   return (
     <div className="Login">
-
+      <img className="logo" src={logo} alt="logo"/>
       <div className="box">
+      <h1>Inicia sesion</h1>
         <form>
-          <label>
-            Usuario
-            <input
-              type="text"
-              name= "usuario"
-              value={data.usuario}
-              onChange={handleChange} />
-          </label>
-          <label>
-            Contraseña
-            <input
-              type="password"
-              name="contrasena"
-              value={data.contrasena}
-              onChange={handleChange} />
-          </label>
-          <NavLink to="/home">
-          <button onClick={onSubmit}>Enviar</button>
-          </NavLink>
-        </form>
+          <Input 
+            name="Usuario"
+            tipo="text"
+            />
+          <Input 
+            name="Contraseña"
+            tipo="password"/>
+          <Button
+            onClick = {onSubmit}  
+            name="Entrar"
+            style="primary"/>
+          </form>
       </div>
+      <Info/>
     </div>
   )
 }

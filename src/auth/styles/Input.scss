@@ -1,0 +1,32 @@
+@import '../../index.scss';
+.form__label {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+    color: gray;
+}
+
+.form__input {
+    color: #333;
+    margin: 1rem auto;
+    font-size: 1.8rem;
+    padding: 1.3rem 2rem;
+    border-radius: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: $sombra1;
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form__input:placeholder-shown+.form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+}

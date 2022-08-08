@@ -1,8 +1,7 @@
 @import '../../index.scss';
-.Sidebar{
+
+.Sidebar {
     background-color: $azul;
-    border-right: 2px solid white;
-    box-shadow:  0 17px 8px #1a161654;
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: repeat(15, 1fr);
@@ -12,46 +11,57 @@
     top: 0;
     z-index: 99;
     transition-duration: 0.2s;
-        .item{
-            display: grid;
-            color: white;
-            h2{
-                display: none;
-            }
-            button{
-                background-color: transparent;
-                border: none;
-                @include for-phone-only{
-                    display: none;
-                }
-            }
-            img{
-                width: 4rem;
-                margin: auto;
-            }
+
+    .item {
+        display: grid;
+        color: white;
+        .logo, h2 {
+            display: none;
         }
-    }
-    .logout{
-        grid-row: 15;
-        button{
+
+        button {
             background-color: transparent;
             border: none;
+
+            @include for-phone-only {
+                display: none;
+            }
         }
-        img{
-            width: 60%;
+
+        img {
+            width: 4rem;
+            margin: auto;
         }
     }
-.close{
-    width: 3vw;
 }
-.open{
+
+.logout {
+    grid-row: 15;
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+.close {
+    width: 4vw;
+}
+
+.open {
     width: 10vw;
-    .item{
+
+    .item {
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
-
-        h2{
+        .logo{
+            display: inline-block;
+        }
+        h2 {
             text-align: left;
             display: inline-block;
         }
